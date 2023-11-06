@@ -1,0 +1,28 @@
+.isloading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.isloading__title {
+  color: white;
+  font-weight: 500;
+  font-size: 300%;
+  margin-top: 30px;
+}
+
+.isloading__divImg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.isloading__img {
+  border-radius: 0.8em;
+  width: 50%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4),
+    -3px -3px 3px rgba(255, 255, 255, 0.8);
+}
