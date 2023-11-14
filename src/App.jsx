@@ -16,12 +16,16 @@ function App() {
   const [location, getLocation, isLoading, hasError] = useFetch(url);
 
   useEffect(() => {
-    getLocation();
+    if (locationId !== "") {
+      getLocation();
+    }
   }, [locationId]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLocationId(inputLocation.current.value.trim());
+    if (inputLocation.current.value.trim() !== "") {
+      setLocationId(inputLocation.current.value.trim());
+    }
   };
 
   const inputLocation = useRef();
